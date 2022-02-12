@@ -53,6 +53,12 @@ def insertInto():
     print("compiled successfully")
     createacctdb()
     fetchall(email_address)
+    userTransaction = input("Will you like to perform a transaction with us today: ")
+    if userTransaction == "yes" or userTransaction == "y":
+        performTransactions(first_name, last_name, email_address)
+    else:
+        print(f"""Thank you for creating an account with us {first_name} {last_name}. We can't wait to see what the future"""\
+        """for you!""")
     connect.commit()
 # insertInto()
 # def seeTable():
@@ -126,7 +132,7 @@ def retrieveCustomerDetails(first_name, last_name, email_address):
         else:
             userTransaction = input("Will you like to create an account with us? ")
             if userTransaction == "yes":
-                createacctdb()
+                insertInto()
             else:
                 print("Thank you for stopping by at Ella's banking, we hope to see you soon")
                 exit()
@@ -253,7 +259,7 @@ def updateCustomer():
         retrieveCustomerDetails(first_name, last_name, email_address)
         usertransactions = input(f"Will you like to perform any transactions today, {first_name}: ")
         if (usertransactions.lower() == "yes" or usertransactions.lower() == "balance" or usertransactions.lower() == "withdraw" or usertransactions.lower() == "close"
-        or usertransactions == "withdraw"):
+        or usertransactions == "deposit"):
             performTransactions(first_name, last_name, email_address)
         else:
             print(f"That will be all for today, thank you for coming {first_name} {last_name}. We hope to see you soon!")
