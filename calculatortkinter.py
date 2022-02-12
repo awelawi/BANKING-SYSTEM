@@ -9,7 +9,17 @@ e.grid(row=0, column=0, columnspan=3, padx=10, pady=10)
 
 def ButtonClick(number):
     # e.delete(0, END)
-    e.insert(0, number)
+    current_num = e.get()
+    e.delete(0, END)
+    e.insert(0, str(current_num) + str(number))
+
+def ButtonClear():
+    "Clears the text box"
+    e.delete(0, END)
+
+def ButtonAdd():
+    "Adds the values in the text box"
+    return
 
 #Define the buttins
 button1 = Button(root, text="1", padx=40, pady=20, command = lambda:ButtonClick(1))
@@ -22,9 +32,9 @@ button7 = Button(root, text="7", padx=40, pady=20, command=lambda:ButtonClick(7)
 button8 = Button(root, text="8", padx=40, pady=20, command=lambda:ButtonClick(8))
 button9 = Button(root, text="9", padx=40, pady=20, command=lambda:ButtonClick(9))
 button0 = Button(root, text="0", padx=40, pady=20, command=lambda:ButtonClick(0))
-button_add = Button(root, text="+", padx=39, pady=20,command=lambda: ButtonClick())
+button_add = Button(root, text="+", padx=39, pady=20,command=lambda: Button_Add())
 button_equal = Button(root, text="=", padx=91, pady=20,command=lambda: ButtonClick())
-button_clear = Button(root, text="Clear", padx=79, pady=20,command=lambda: ButtonClick())
+button_clear = Button(root, text="Clear", padx=79, pady=20,command=ButtonClear)
 
 # Put the button on the screen
 button1.grid(row=3, column=0)

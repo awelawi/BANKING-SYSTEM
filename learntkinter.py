@@ -6,7 +6,6 @@ root = Tk()
 # myLabel1 = Label(root, text="hello world").grid(row = 0, column=0)
 # myLabel2= Label(root, text="My name is John Elder").grid(row = 1, column=0)
 
-
 # Shoving it onto the screen using pack() or grid for beyyer interface
 # Position is relative
 # myLabel1.grid(row = 0, column=0)
