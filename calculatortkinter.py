@@ -83,9 +83,9 @@ button_add = Button(root, text="+", padx=39, pady=20,command= ButtonAdd)
 button_equal = Button(root, text="=", padx=91, pady=20,command=ButtonEqual)
 button_clear = Button(root, text="Clear", padx=79, pady=20,command=ButtonClear)
 
-button_subtract = Button(root, text="-", padx=41, pady=20,command=ButtonSub())
-button_multiply = Button(root, text="*", padx=40, pady=20,command=ButtonMult())
-button_divide = Button(root, text="/", padx=41, pady=20,command=ButtonDivide())
+button_subtract = Button(root, text="-", padx=41, pady=20,command=ButtonSub)
+button_multiply = Button(root, text="*", padx=40, pady=20,command=ButtonMult)
+button_divide = Button(root, text="/", padx=41, pady=20,command=ButtonDivide)
 
 # Put the button on the screen
 button1.grid(row=3, column=0)
