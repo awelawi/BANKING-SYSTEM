@@ -79,7 +79,7 @@ button7 = Button(root, text="7", padx=40, pady=20, command=lambda:ButtonClick(7)
 button8 = Button(root, text="8", padx=40, pady=20, command=lambda:ButtonClick(8))
 button9 = Button(root, text="9", padx=40, pady=20, command=lambda:ButtonClick(9))
 button0 = Button(root, text="0", padx=40, pady=20, command=lambda:ButtonClick(0))
-button_add = Button(root, text="+", padx=39, pady=20,command=lambda: ButtonAddv)
+button_add = Button(root, text="+", padx=39, pady=20,command=lambda: ButtonAdd)
 button_equal = Button(root, text="=", padx=91, pady=20,command=ButtonEqual)
 button_clear = Button(root, text="Clear", padx=79, pady=20,command=ButtonClear)
 
