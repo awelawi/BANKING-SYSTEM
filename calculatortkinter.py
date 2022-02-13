@@ -30,19 +30,6 @@ def ButtonAdd():
     f_num = int(first_num)
     e.delete(0, END)
 
-def ButtonEqual():
-    "Equator function"
-    second_number = e.get()
-    e.delete(0, END)
-    if math == "addition":
-        e.insert(0, f_num + int(second_number))
-    if math == "subtraction":
-        e.insert(0, f_num - int(second_number))
-    if math == "multiplication":
-        e.insert(0, f_num * int(second_number))
-    if math == "division":
-        e.insert(0, f_num / int(second_number))
-
 def ButtonDivide():
     first_num = e.get()
     global f_num
@@ -66,6 +53,21 @@ def ButtonSub():
     math = "subtract"
     f_num = int(first_num)
     e.delete(0, END)
+
+def ButtonEqual():
+    "Equator function"
+    second_number = e.get()
+    e.delete(0, END)
+    if math == "addition":
+        e.insert(0, f_num + int(second_number))
+    if math == "subtraction":
+        e.insert(0, f_num - int(second_number))
+    if math == "multiplication":
+        e.insert(0, f_num * int(second_number))
+    if math == "division":
+        e.insert(0, f_num / int(second_number))
+
+
 #Define the buttins
 button1 = Button(root, text="1", padx=40, pady=20, command = lambda:ButtonClick(1))
 button2 = Button(root, text="2", padx=40, pady=20, command=lambda:ButtonClick(2))
