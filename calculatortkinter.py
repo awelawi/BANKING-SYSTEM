@@ -60,11 +60,11 @@ def ButtonEqual():
     e.delete(0, END)
     if math == "addition":
         e.insert(0, f_num + int(second_number))
-    if math == "subtraction":
+    elif math == "subtraction":
         e.insert(0, f_num - int(second_number))
-    if math == "multiplication":
+    elif math == "multiplication":
         e.insert(0, f_num * int(second_number))
-    if math == "division":
+    elif math == "division":
         e.insert(0, f_num / int(second_number))
 
 
